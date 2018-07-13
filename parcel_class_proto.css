@@ -1,0 +1,75 @@
+* {
+	font-family: arial;
+}
+
+/* Split the screen in half */
+.split {
+	height: 100%;
+	width: 50%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	overflow-x: hidden;
+}
+
+/* Control the left side */
+.left {
+	left: 0;
+}
+
+/* Control the right side */
+.right {
+	right: 0;
+	background-color: rgb(220, 220, 220);
+}
+
+#map_canvas {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#customer_info {
+	margin-left: 20px;
+	padding-left: 20px;
+	border: 2px solid black;
+	width: 50%;
+	background-color: white;
+}
+
+#form_canvas {
+	margin-left: 20px;
+}
+
+form p {
+	font-weight: bold;
+}
+
+h1 {
+	margin-top: 0;
+	padding-top: 12%;
+	padding-left: 1%;
+	background-color: red;
+	vertical-align: bottom;
+	font-size: 48px;
+}
+
+button, #export_link {
+	font-size: 24px;
+	width: 50%;
+	margin-top: 20px;
+}
+
+form input['radio'] {
+	height: 16px;
+}
+
+#export_link {
+	text-align: center;
+}
+
+img {
+	height: 10%;
+	width: auto;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W. W. Grainger - CIM</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<link rel='stylesheet' type='text/css' href='parcel_class_proto.css'>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=true_or_false"></script>
+	<script type="text/javascript" src="parcel_class_proto.js"></script>
+</head>
+<body onload="initialize()">
+	<div class='split left'>
+		<div id = 'map_canvas'>
+		</div>
+	</div>
+
+	<div class='split right'>
+
+		<h1> Parcel Classification</h1>
+
+		<div id='customer_info'>
+			<h2 id='address1'></h2>
+			<h2 id='address2'></h2>
+			<h3 id='duns_number'></h3>
+		</div>
+		<div id='form_canvas'>
+
+			<form id='parcelForm'>
+				
+				<p> 1. Are there any buildings within the parcel boundaries? </p>
+				<div id='Q1'>
+
+					<label for='hasBldgsT'>Yes</label>
+					<input type="radio" name="hasBldgs" id='hasBldgsT' value='True' required>
+
+					<label for='hasBldgsF'>No</label>
+					<input type="radio" name="hasBldgs" id='hasBldgsF' value='False'>
+
+				</div>
+
+				<p> 2. Is this a residence? </p>
+				<div id='Q2'>
+
+					<label for='residentialT'>Yes</label>
+					<input type="radio" name="residential" id='hasBldgsT' value='True' required>
+
+					<label for='residentialF'>No</label>
+					<input type="radio" name="residential" id='residentialF' value='False'>
+
+				</div>
+
+				<p> 3. Are there multiple buildings within the boundaries? </p>
+				<div id='Q3' >
+
+					<label for='multBldgsT'>Yes</label>
+					<input type="radio" name="multBldgs" id='multBldgsT' value='True' required>
+
+					<label for='multBldgsF'>No</label>
+					<input type="radio" name="multBldgs" id='multBldgsF' value='False'>
+
+				</div>
+
+				<p> 4. Are there multiple businesses within the boundaries? </p>
+				<div id='Q4'>
+
+					<label for='multBizT'>Yes</label>
+					<input type="radio" name="multBiz" id='multBizT' value='True' required>
+
+					<label for='multBizF'>No</label>
+					<input type="radio" name="multBiz" id='multBizF' value='False'>
+
+				</div>
+
+			</form> 
+
+			<br/>
+
+			<button id='submitBtn' onclick='submit()'>Go to the next map.</button>
+
+			<button id='exportFile' onclick='exportCSV()'>Export CSV</button>
+
+			<br/>
+			<br/>
+
+
+
+		</div>
+	</div>
+
+</body>
+</html>
