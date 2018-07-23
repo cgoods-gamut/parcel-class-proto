@@ -34,7 +34,7 @@
 	margin-left: 20px;
 	padding-left: 20px;
 	border: 2px solid black;
-	width: 50%;
+	width: 75%;
 	background-color: white;
 }
 
@@ -57,7 +57,7 @@ h1 {
 
 button, #export_link {
 	font-size: 24px;
-	width: 50%;
+	width: 75%;
 	margin-top: 20px;
 }
 
